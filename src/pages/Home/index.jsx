@@ -17,17 +17,27 @@ const Home = () => {
         titleText:'Seja muito bem vindo(a)! 💗',
         svgImage: HappySvg,
         mainImg: pandaImg,
+        isGif: false,
     });
 
     const handleLoading = () => {
         setIsLoading(true);
+        setMainInfoContent({
+            ...mainInfoContent,
+            buttonText: 'Gerar novamente',
+            mainText: '”Seu esforço nunca vai servir de nada se não acreditar em si mesmo! Nunca esqueça o quão foda você é :D”',
+            titleText:'Sua frase está pronta huhu ❤',
+            svgImage: HappySvg,
+            mainImg: jujutsuGif,
+            isGif: true,
+        })
 
         setTimeout(() => {
             setIsLoading(false);
         }, 2000)
     }
     return (
-        <PageContainer>
+        <PageContainer onClick={() => console.log(mainInfoContent)}>
             {
                 isLoading ? <LoadingInfo /> 
                 :            
@@ -38,6 +48,7 @@ const Home = () => {
                     mainText={mainInfoContent.mainText}
                     titleText={mainInfoContent.titleText}
                     svgImage={mainInfoContent.svgImage}
+                    isGif={mainInfoContent.isGif}
                 />
             }
             <CreditText>Feito com amor por Sabanai 💗</CreditText>

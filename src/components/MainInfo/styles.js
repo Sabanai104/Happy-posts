@@ -14,8 +14,8 @@ export const CenterContainer = styled.section`
 `;
 
 export const HomeImage = styled.img`
-    min-width: 206px;
-    min-height: 216px;
+    width: 206px;
+    height: 216px;
     margin-right: 25px;
 
     @media (max-width: 600px) {
@@ -27,7 +27,23 @@ export const HomeImage = styled.img`
         width: 111px;
         height: 117px;
     }
-    `;
+`;
+
+export const GifImage = styled.img`
+    width: 400px;
+    height: 200px;
+    margin-right: 25px;
+    border-radius: 8px;
+    @media (max-width: 600px) {
+        width: 201px;
+        height: 121px;
+    }
+
+    @media (max-width: 400px) {
+        width: 150px;
+        height: 100px;
+    }
+`;
 
 export const HomeTitle = styled.div`
     font-family: 'Inter', sans-serif;
