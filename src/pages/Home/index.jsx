@@ -2,9 +2,9 @@ import {
     PageContainer,
     CreditText
 } from './styles';
+import { setQuote } from '../../utils/quotes';
 import { useState } from 'react';
 import pandaImg from '../../assets/panda.png';
-import jujutsuGif from '../../assets/gif/jujutsu.gif';
 import {ReactComponent as HappySvg} from '../../assets/svg/happy.svg';
 import MainInfo from '../../components/MainInfo';
 import LoadingInfo from '../../components/LoadingInfo';
@@ -20,17 +20,18 @@ const Home = () => {
         isGif: false,
     });
 
-    const handleLoading = () => {
+    const handleButtonClick = () => {
         setIsLoading(true);
+        const quote = setQuote();
         setMainInfoContent({
             ...mainInfoContent,
             buttonText: 'Gerar novamente',
-            mainText: '”Seu esforço nunca vai servir de nada se não acreditar em si mesmo! Nunca esqueça o quão foda você é :D”',
+            mainText: quote.mainText,
             titleText:'Sua frase está pronta huhu ❤',
             svgImage: HappySvg,
-            mainImg: jujutsuGif,
+            mainImg: quote.mainImg,
             isGif: true,
-        })
+        });
 
         setTimeout(() => {
             setIsLoading(false);
@@ -42,7 +43,7 @@ const Home = () => {
                 isLoading ? <LoadingInfo /> 
                 :            
                 <MainInfo 
-                    buttonClick={handleLoading}
+                    buttonClick={handleButtonClick}
                     buttonText={mainInfoContent.buttonText}
                     mainImg={mainInfoContent.mainImg}
                     mainText={mainInfoContent.mainText}
