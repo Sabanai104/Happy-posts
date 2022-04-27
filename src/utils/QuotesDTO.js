@@ -45,6 +45,9 @@ export default class QuotesDTO {
         }, {
             mainImg: 'https://media.giphy.com/media/JGNmo9nBmmy8U/giphy.gif',
             mainText: '”Todo mundo que você conhece está lutando uma batalha na qual você não sabe nada. Por isso, seja gentil sempre! 🥰”'
+        }, {
+            mainImg: 'https://media.giphy.com/media/m7tlRnPbGbBGo/giphy.gif',
+            mainText: '”Você é doce igual mel, seu cara de pastel 🍬”'
         }];
     }
 
