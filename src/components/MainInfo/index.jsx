@@ -7,7 +7,7 @@ import {
     GifImage
 } from "./styles";
 
-const MainInfo = ({ mainImg, titleText, mainText, buttonClick, buttonText, svgImage, isGif }) => (
+const MainInfo = ({ mainImg, titleText, mainText, buttonClick, buttonText, SVGImage, isGif }) => (
     <>
         <CenterContainer>
             {
@@ -15,7 +15,7 @@ const MainInfo = ({ mainImg, titleText, mainText, buttonClick, buttonText, svgIm
             }
             <HomeTitle>{titleText}</HomeTitle>
             <HomeText>{mainText}</HomeText>
-            <HomeButton onClick={buttonClick}>{buttonText} <svgImage style={{ marginLeft: '8px'}} fill='#5C08B2' /></HomeButton>
+            <HomeButton onClick={buttonClick}>{buttonText} <SVGImage style={{ marginLeft: '8px'}} fill='#5C08B2' /></HomeButton>
         </CenterContainer>
     </>
 );

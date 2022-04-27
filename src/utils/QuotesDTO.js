@@ -20,10 +20,10 @@ export default class QuotesDTO {
             mainText: '”O mundo não é perfeito. Mas ele está aqui para nós, fazendo o melhor que pode... e é isso que o faz tão lindo!”'
         }, {
             mainImg: 'https://media.giphy.com/media/U1DQ4REx2ZMI/giphy.gif',
-            mainText: '”Se você desviar os olhos das coisas tristes, elas acontecerão novamente um dia. Se você continuar fugindo, continuará repetindo os mesmos erros. É por isso que você precisa encarar a verdade diretamente”'
+            mainText: '”Se você desviar os olhos das coisas tristes, elas acontecerão novamente um dia. Se você continuar fugindo, continuará repetindo os mesmos erros. É por isso que você precisa encarar a verdade diretamente e lutar para ser feliz :)”'
         }, {
             mainImg: 'https://media.giphy.com/media/kXdo4BgGoFC80/giphy.gif',
-            mainText: '”Pode ser difícil agora, mas você deve silenciar esses pensamentos. Pare de contar as coisas que você perdeu, o que se foi se foi. Então pergunte a si mesmo o que ainda resta para você e valorize isso!”'
+            mainText: '”Pode ser difícil agora, mas você deve silenciar esses pensamentos. Pare de contar as coisas que você perdeu, o que se foi se foi. Então pergunte a si mesmo o que ainda resta para você e valorize isso! 😁”'
         }, {
             mainImg: 'https://media.giphy.com/media/ZtB2l3jHiJsFa/giphy.gif',
             mainText: '”As pessoas mais solitárias são as mais gentis. As pessoas mais tristes sorriem mais. As pessoas mais machucadas são as mais sábias. Isso porque elas não desejam ver mais ninguém sofrer do jeito que sofreram”'
@@ -35,16 +35,16 @@ export default class QuotesDTO {
             mainText: '”Quando as pessoas se machucam, elas aprendam a odiar… quando as pessoas machucam outros, eles viram odiados e atormentados com a culpa. Mas saiba que a dor permite às pessoas serem bondosas. A dor permite que todo mundo cresça... e como você cresce é sua responsabilidade”'
         }, {
             mainImg: 'https://media.giphy.com/media/LEV3OJQG0XXnq/giphy.gif',
-            mainText: '”Por vezes você precisa de sofrer para saber, cair para crescer, perder para ganhar porque as maiores lições na vida são aprendidas através da dor.”'
+            mainText: '”Por vezes você precisa sofrer para saber, cair para crescer, perder para ganhar porque as maiores lições na vida são aprendidas através das tristezas que passamos. Mas isso sempre nos torna pessoas melhores!”'
         }, {
             mainImg: 'https://media.giphy.com/media/26FLdmIp6wJr91JAI/giphy.gif',
             mainText: '”Você é lindo(a) ❤️”'
         }, {
             mainImg: 'https://media.giphy.com/media/eHpWHuEUxHIre/giphy.gif',
             mainText: '”Você é maravilhoso(a) nunca se esqueça disso!”'
-        } , {
-            mainImg: 'https://media.giphy.com/media/m7tlRnPbGbBGo/giphy.gif',
-            mainText: '”Você é doce igual mel, seu cara de pastel 🍬”'
+        }, {
+            mainImg: 'https://media.giphy.com/media/JGNmo9nBmmy8U/giphy.gif',
+            mainText: '”Todo mundo que você conhece está lutando uma batalha na qual você não sabe nada. Por isso, seja gentil sempre! 🥰”'
         }];
     }
 

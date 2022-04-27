@@ -22,7 +22,8 @@ const Home = () => {
 
     const handleButtonClick = () => {
         setIsLoading(true);
-        const quote = new QuotesDTO().setQuotes();
+        const classQuote = new QuotesDTO();
+        const quote = classQuote.setQuotes();
         setMainInfoContent({
             ...mainInfoContent,
             buttonText: 'Gerar novamente',
@@ -35,7 +36,7 @@ const Home = () => {
 
         setTimeout(() => {
             setIsLoading(false);
-        }, 2000)
+        }, 1000)
     }
     return (
         <PageContainer>
@@ -48,7 +49,7 @@ const Home = () => {
                     mainImg={mainInfoContent.mainImg}
                     mainText={mainInfoContent.mainText}
                     titleText={mainInfoContent.titleText}
-                    svgImage={mainInfoContent.svgImage}
+                    SVGImage={mainInfoContent.svgImage}
                     isGif={mainInfoContent.isGif}
                 />
             }
