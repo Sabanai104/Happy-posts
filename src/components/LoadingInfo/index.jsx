@@ -7,7 +7,7 @@ const LoadingInfo = () => {
         <>
             <CenterContainer>
                 <ReactLoading type="spokes" color={theme.colors.primary} />
-                <LoadingText><b>Espere um pouco!</b> Estamos escolhendo uma frase sensacional :D</LoadingText>
+                <LoadingText><b>Espere um pouco!</b> Estamos escolhendo uma frase sensacional 🥰</LoadingText>
                 <TipText>Equanto isso, que tal fazer uma lista sobre coisas incriveis que você já fez?</TipText>
             </CenterContainer>
         </>

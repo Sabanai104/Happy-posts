@@ -4,7 +4,7 @@ export const theme = {
         primary: '#5C08B2',
         primaryLessOpacity: '#F0E6FF',
         primaryForText: '#994DFA',
-        text: '#999999',
+        text: '#888888',
         titles: '#4A4A4A',
     }
 }

@@ -2,7 +2,7 @@ import {
     PageContainer,
     CreditText
 } from './styles';
-import { setQuote } from '../../utils/quotes';
+import QuotesDTO from '../../utils/QuotesDTO';
 import { useState } from 'react';
 import pandaImg from '../../assets/panda.png';
 import {ReactComponent as HappySvg} from '../../assets/svg/happy.svg';
@@ -22,7 +22,7 @@ const Home = () => {
 
     const handleButtonClick = () => {
         setIsLoading(true);
-        const quote = setQuote();
+        const quote = new QuotesDTO().setQuotes();
         setMainInfoContent({
             ...mainInfoContent,
             buttonText: 'Gerar novamente',
@@ -38,7 +38,7 @@ const Home = () => {
         }, 2000)
     }
     return (
-        <PageContainer onClick={() => console.log(mainInfoContent)}>
+        <PageContainer>
             {
                 isLoading ? <LoadingInfo /> 
                 :            
@@ -52,7 +52,7 @@ const Home = () => {
                     isGif={mainInfoContent.isGif}
                 />
             }
-            <CreditText>Feito com amor por Sabanai 💗</CreditText>
+            <CreditText>Feito com amor por Sabanai 🧡</CreditText>
         </PageContainer>
     );
 }
